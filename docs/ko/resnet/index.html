@@ -81,9 +81,9 @@
 <p>이 경우, <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqh" style=""><span class="mord mathcal" style="margin-right:0.00965em">H</span><span class="mopen" style="">(</span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mclose" style="">)</span></span></span></span></span></span> 가 동일한 입력을 전달해주도록 학습하는 것은 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqg" style=""><span class="mord" style=""><span class="mord coloredeq eqj" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen" style="">(</span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mclose" style="">)</span></span></span></span></span></span> 가 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>이 되도록 학습하는 것과 동일하고, 이 과정이 학습하기 더 쉽다.</p>
 <p>매개변수 형태로 이를 표현해보면 아래와 같다</p>
 <p><span ><span class="katex-display"><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqd" style=""><span class="mord" style=""><span class="mord coloredeq eqj" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen" style="">(</span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mpunct" style="">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen" style="">{</span><span class="mord" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose" style="">})</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span></span></p>
-<p>그리고 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqj" style=""><span class="mord" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen">(</span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span> 의 특징 맵 크기와 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> 의 크기가 다른 경우, 본 논문은 학습된 가중치 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqn" style=""><span class="mord" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span>를 활용하여 아래와 같이 선형 투영을 하는 것을 제안한다.</p>
+<p>그리고 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqj" style=""><span class="mord" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen">(</span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span> 의 특징 맵 크기와 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> 의 크기가 다른 경우, 본 논문은 학습된 가중치 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqn" style=""><span class="mord" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span>를 활용하여 아래와 같이 선형 사영을 하는 것을 제안한다.</p>
 <p><span ><span class="katex-display"><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqb" style=""><span class="mord" style=""><span class="mord coloredeq eqd" style=""><span class="mord coloredeq eqj" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen coloredeq eqd" style="">(</span><span class="mord coloredeq eqd" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mpunct coloredeq eqd" style="">,</span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mopen coloredeq eqd" style="">{</span><span class="mord coloredeq eqd" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose coloredeq eqd" style="">})</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style=""><span class="mord coloredeq eqm" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord coloredeq eqm" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span></span></span></p>
-<p>본 논문에서 선형 투영 대신 제로 패딩을 활용하여 실험을 했지만, 선형 투영이 더 좋은 성능을 보이는 것을 확인했다. 또한 만약에 특징 맥 크기가 일치한다면 동일한 입력을 전달하는 것이 선형 투영보다 더 좋은 성능을 보임을 확인했다.</p>
+<p>본 논문에서 선형 사영 대신 제로 패딩을 활용하여 실험을 했지만, 선형 사영이 더 좋은 성능을 보이는 것을 확인했다. 또한 만약에 특징 맥 크기가 일치한다면 동일한 입력을 전달하는 것이 선형 사영보다 더 좋은 성능을 보임을 확인했다.</p>
 <p><span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord coloredeq eqj" style=""><span class="mord" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span></span></span></span></span> 는 한 개 이상의 레이어를 가지고 있어야 하는데, 그렇지 않으면 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqb" style=""><span class="mord" style=""><span class="mord coloredeq eqd" style=""><span class="mord coloredeq eqj" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen coloredeq eqd" style="">(</span><span class="mord coloredeq eqd" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mpunct coloredeq eqd" style="">,</span><span class="mspace" style="margin-right:0.16666666666666666em"></span><span class="mopen coloredeq eqd" style="">{</span><span class="mord coloredeq eqd" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose coloredeq eqd" style="">})</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style=""><span class="mord coloredeq eqm" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord coloredeq eqm" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span></span> 의 합은 비선형성을 가지지 않아서 선형 레이어처럼 동작할 것이다.</p>
 <p>이것은 CIFAR-10에 대하여 ResNet를 학습하는 <a href="experiment.html">학습 코드</a> 이다.</p>
 
@@ -102,8 +102,8 @@
             <div class='section-link'>
                 <a href='#section-1'>#</a>
             </div>
-            <h2>잔차 연결을 위한 선형 투영</h2>
-<p>이것은 위에서 설명된 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> 투영을 수행한다.</p>
+            <h2>shortcut 연결을 위한 선형 사영</h2>
+<p>이것은 위에서 설명된 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> 사영을 수행한다.</p>
 
         </div>
         <div class='code'>
@@ -120,7 +120,7 @@
 <li><code  class="highlight"><span></span><span class="n">out_channels</span></code>
  는 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord coloredeq eqd" style=""><span class="mord" style=""><span class="mord coloredeq eqj" style=""><span class="mord mathcal coloredeq eqr" style="margin-right:0.09931em">F</span></span></span><span class="mopen" style="">(</span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span><span class="mpunct" style="">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen" style="">{</span><span class="mord" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose" style="">})</span></span></span></span></span></span> 에서 채널의 수를 의미한다</li>
 <li><code  class="highlight"><span></span><span class="n">stride</span></code>
- 는 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord coloredeq eqr" style=""><span class="mord mathnormal" style="margin-right:0.13889em">F</span></span></span></span></span></span>에서 합성곱 연산에 활용되는 보폭의 길이를 의미한다. 우리는 특징 맵 크기를 맞추기 위해 잔차 연결에 동일한 보폭을 사용한다.</li></ul>
+ 는 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord coloredeq eqr" style=""><span class="mord mathnormal" style="margin-right:0.13889em">F</span></span></span></span></span></span>에서 합성곱 연산에 활용되는 보폭의 길이를 의미한다. 우리는 특징 맵 크기를 맞추기 위해 shortcut 연결에 동일한 보폭을 사용한다.</li></ul>
 
         </div>
         <div class='code'>
@@ -143,7 +143,7 @@
             <div class='section-link'>
                 <a href='#section-4'>#</a>
             </div>
-            <p>선형 투영 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> 을 위한 합성곱 레이어</p>
+            <p>선형 사영 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> 을 위한 합성곱 레이어</p>
 
         </div>
         <div class='code'>
@@ -194,15 +194,15 @@
 <h2>잔차 블록</h2>
 <p>이것은 논문에 설명된 잔차 블록을 구현한다. 그것은 두 개의 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span> 합성곱 레이어를 가지고 있다.</p>
 <p><img alt="Residual Block" src="residual_block.svg"></p>
-<p>The first convolution layer maps from <code  class="highlight"><span></span><span class="n">in_channels</span></code>
- to <code  class="highlight"><span></span><span class="n">out_channels</span></code>
-, where the <code  class="highlight"><span></span><span class="n">out_channels</span></code>
- is higher than <code  class="highlight"><span></span><span class="n">in_channels</span></code>
- when we reduce the feature map size with a stride length greater than <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord coloredeq eqp" style=""><span class="mord" style="">1</span></span></span></span></span></span>.</p>
-<p>The second convolution layer maps from <code  class="highlight"><span></span><span class="n">out_channels</span></code>
- to <code  class="highlight"><span></span><span class="n">out_channels</span></code>
- and always has a stride length of 1.</p>
-<p>Both convolution layers are followed by batch normalization.</p>
+<p>첫 번째 합성곱 레이어는 <code  class="highlight"><span></span><span class="n">in_channels</span></code>
+ 를 <code  class="highlight"><span></span><span class="n">out_channels</span></code>
+로 연결하는데, 우리가 특징 맵 크기를 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord coloredeq eqp" style=""><span class="mord" style="">1</span></span></span></span></span></span>보다 큰 스트라이드를 가지고 줄이는 경우 <code  class="highlight"><span></span><span class="n">out_channels</span></code>
+ 이 <code  class="highlight"><span></span><span class="n">in_channels</span></code>
+ 보다 크다.</p>
+<p>두 번째 합성곡 레이어는 <code  class="highlight"><span></span><span class="n">out_channels</span></code>
+ 를 <code  class="highlight"><span></span><span class="n">out_channels</span></code>
+ 로 연결하고 항상 길이 1의 스트라이드를 가진다.</p>
+<p>두 개의 합성곱 레이어 이후에는 배치 정규화가 진행된다.</p>
 
         </div>
         <div class='code'>
@@ -215,11 +215,11 @@
                 <a href='#section-9'>#</a>
             </div>
             <ul><li><code  class="highlight"><span></span><span class="n">in_channels</span></code>
- is the number of channels in <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> </li>
+ 는 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> 에서의 채널의 수이다</li>
 <li><code  class="highlight"><span></span><span class="n">out_channels</span></code>
- is the number of output channels </li>
+ 는 출력 채널의 수이다 </li>
 <li><code  class="highlight"><span></span><span class="n">stride</span></code>
- is the stride length in the convolution operation.</li></ul>
+ 는 합성곱 연산에서의 스트라이드 길이이다.</li></ul>
 
         </div>
         <div class='code'>
@@ -242,7 +242,7 @@
             <div class='section-link'>
                 <a href='#section-11'>#</a>
             </div>
-            <p>First <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span> convolution layer, this maps to <code  class="highlight"><span></span><span class="n">out_channels</span></code>
+            <p>첫 번째 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span> 합성곱 레이어는 <code  class="highlight"><span></span><span class="n">out_channels</span>로 연결한다</code>
  </p>
 
         </div>
@@ -255,7 +255,7 @@
             <div class='section-link'>
                 <a href='#section-12'>#</a>
             </div>
-            <p>Batch normalization after the first convolution </p>
+            <p>첫 번째 합성곱 연산 이후 배치 정규화를 진행 </p>
 
         </div>
         <div class='code'>
@@ -267,7 +267,7 @@
             <div class='section-link'>
                 <a href='#section-13'>#</a>
             </div>
-            <p>First activation function (ReLU) </p>
+            <p>첫 번째 활성화 함수 (ReLU) </p>
 
         </div>
         <div class='code'>
@@ -279,7 +279,7 @@
             <div class='section-link'>
                 <a href='#section-14'>#</a>
             </div>
-            <p>Second <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span> convolution layer </p>
+            <p>두 번째 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span> 합성곱 레이어 </p>
 
         </div>
         <div class='code'>
@@ -291,7 +291,7 @@
             <div class='section-link'>
                 <a href='#section-15'>#</a>
             </div>
-            <p>Batch normalization after the second convolution </p>
+            <p>두 번째 합성곱 연산 이후 배치 정규화를 진행 </p>
 
         </div>
         <div class='code'>
@@ -303,7 +303,7 @@
             <div class='section-link'>
                 <a href='#section-16'>#</a>
             </div>
-            <p>Shortcut connection should be a projection if the stride length is not <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord coloredeq eqp" style=""><span class="mord" style="">1</span></span></span></span></span></span> or if the number of channels change </p>
+            <p>Shortcut 연결은 스트라이드 길이가 <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord coloredeq eqp" style=""><span class="mord" style="">1</span></span></span></span></span></span> 이 아니거나 채널의 수가 바뀐다면 사영되어야 한다 </p>
 
         </div>
         <div class='code'>
@@ -315,7 +315,7 @@
             <div class='section-link'>
                 <a href='#section-17'>#</a>
             </div>
-            <p>Projection <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> </p>
+            <p> <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord coloredeq eqm" style=""><span class="mord" style=""><span class="mord coloredeq eqn" style=""><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight" style=""><span class="mord mathnormal mtight" style="">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mord" style=""><span class="mord mathnormal coloredeq eqs" style="">x</span></span></span></span></span></span></span> 의 사영 값</p>
 
         </div>
         <div class='code'>
@@ -328,7 +328,7 @@
             <div class='section-link'>
                 <a href='#section-18'>#</a>
             </div>
-            <p>Identity <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> </p>
+            <p> <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord coloredeq eqs" style=""><span class="mord mathnormal" style="">x</span></span></span></span></span></span> 의 동일 값</p>
 
         </div>
         <div class='code'>
@@ -340,7 +340,7 @@
             <div class='section-link'>
                 <a href='#section-19'>#</a>
             </div>
-            <p>Second activation function (ReLU) (after adding the shortcut) </p>
+            <p>두 번째 활성화 함수 (ReLU) (shortcut 연결을 추가한 이후) </p>
 
         </div>
         <div class='code'>
@@ -353,7 +353,7 @@
                 <a href='#section-20'>#</a>
             </div>
             <ul><li><code  class="highlight"><span></span><span class="n">x</span></code>
- is the input of shape <code  class="highlight"><span></span><span class="p">[</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">in_channels</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">]</span></code>
+ 는 <code  class="highlight"><span></span><span class="p">[</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">in_channels</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">]</span>와 같은 입력이다</code>
 </li></ul>
 
         </div>
@@ -366,7 +366,7 @@
             <div class='section-link'>
                 <a href='#section-21'>#</a>
             </div>
-            <p>Get the shortcut connection </p>
+            <p>shortcut 연결을 진행 </p>
 
         </div>
         <div class='code'>
@@ -378,7 +378,7 @@
             <div class='section-link'>
                 <a href='#section-22'>#</a>
             </div>
-            <p>First convolution and activation </p>
+            <p>첫 번째 합성곱 연산과 활성화 함수 적용 </p>
 
         </div>
         <div class='code'>
@@ -390,7 +390,7 @@
             <div class='section-link'>
                 <a href='#section-23'>#</a>
             </div>
-            <p>Second convolution </p>
+            <p>두 번째 합성곱 연산 </p>
 
         </div>
         <div class='code'>
@@ -402,7 +402,7 @@
             <div class='section-link'>
                 <a href='#section-24'>#</a>
             </div>
-            <p>Activation function after adding the shortcut </p>
+            <p>shortcut 연결을 추가한 이후 활성화 함수 적용</p>
 
         </div>
         <div class='code'>
@@ -415,7 +415,7 @@
                 <a href='#section-25'>#</a>
             </div>
             <p> <a id="bottleneck_residual_block"></a></p>
-<h2>Bottleneck Residual Block</h2>
+<h2>병목 잔차 블록</h2>
 <p>This implements the bottleneck block described in the paper. It has <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eqk" style=""><span class="mord" style=""><span class="mord coloredeq eqp" style="">1</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style=""><span class="mord coloredeq eqp" style="">1</span></span></span></span></span></span></span>, <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eql" style=""><span class="mord" style="">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style="">3</span></span></span></span></span></span>, and <span ><span class="katex"><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord coloredeq eqk" style=""><span class="mord" style=""><span class="mord coloredeq eqp" style="">1</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin" style="">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord" style=""><span class="mord coloredeq eqp" style="">1</span></span></span></span></span></span></span> convolution layers.</p>
 <p><img alt="Bottlenext Block" src="bottleneck_block.svg"></p>
 <p>The first convolution layer maps from <code  class="highlight"><span></span><span class="n">in_channels</span></code>
